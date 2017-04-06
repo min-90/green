@@ -4,6 +4,178 @@
 	<title></title>
 </head>
 <body>
+<h2>To write an external path: &lt a href= "the link" &gt HTML the description &lt/a&gt </h2>
+Example: <a href=https://www.w3schools.com/html/html_links.asp> external paths </a>
+<a href= https://www.w3schools.com/html/html_images.asp> images </a>
+
+<h2> For images: Syntax for images are &lt img &gt but you define the source "the url" alt = "some text that shows up if the image doesn´t show" style= "width:the pixels; height: the pixels for height;" and close the tag with &gt </h2>
+
+<dd>For annimated images use ".gif" </dd>
+
+
+
+Use the HTML <img> element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes to define the size of the image
+Use the CSS width and height properties to define the size of the image (alternatively)
+Use the CSS float property to let the image float
+Use the HTML <map> element to define an image-map
+Use the HTML <area> element to define the clickable areas in the image-map
+Use the HTML <img>'s element usemap attribute to point to an image-map
+
+For defining a html table: the first tag is: table 
+Each row of the html table is defined with &lt tr &gt
+The table header is &lt th &gt
+The table cells are defined with &lt td &gt
+
+Example: 
+<table style= "width:100%">
+
+<tr>
+    <th>Concept</th>
+    <th>Command</th> 
+  
+  </tr>
+  <tr>
+    <td>rows of the table</td>
+    <td>cells fo a table</td>
+    <td>header of table</td>
+    <td>thickness of border
+  </tr>
+
+  <tr>
+    <td>tr</td>
+    <td>td</td>
+    <td>th</td>
+    <
+  </tr>
+  
+</table>
+For more information about styling a table:
+<a href = "https://www.w3schools.com/html/html_tables.asp"> table design </a> 
+
+<h2> Creating lists </h2>
+	<ul> 
+		<li>for unlisted list use &lt li &gt </li>
+		<li>for numbered list use &lt ot &gt </li>
+
+<h3>Types of bullet designs </h3>
+	<ul style="list-style-type: square"> 
+		<li> disc = bullet (default) </li>
+		<li> circle	= circle bullet </li>
+		<li> square = square bullet</li>
+		<li> none = The list items will not be marked </li>
+	</ul>
+<h3>Crealing numbered list </h3>
+<h4>Ordered lists with numbbers- presentation of the list</h4>
+	<ol type=1>
+		<li>type 1= numbers (default)</li>
+		<li>type A = uppercase letters</li>
+		<li>type a= lowercase letters</li>
+		<li>type I= uppercase roman letters</li>
+		<li>type i= lowercase roman letters</li>
+	</ol>
+<h5>example of ordered lists</h5>
+	<ol style ="list-style-type: type I">
+		<li>&lt dl &gt tad defines the description list </li>
+			<dd>This is the main tag in order to start the description list</dd>
+		<li>&lt dt &gt is a tag that defines the name </li>
+			<dd>This is the main bullet</dd>
+		<li>&lt dd &gt describes them </li>
+			<dd>This is when you click "tab" in a bulleted word doc</dd>
+	</ol>
+
+<h5>Nested HTML lists</h5>
+	<ul style="list-style-type: 1">
+		<li>This is to create a lsit within a list. Its all about the order of &lt ul &gt and &lt ol &gt </li>
+		<li>Coffee</li>
+			  <li>Tea
+			    <ol>
+			    <li>Black tea</li>
+			    <li>Green tea</li>
+			    </ol>
+			  </li>
+			  <li>Milk</li>
+	</ul>
+<h5>Horizontal lists: used for creating menus </h5>
+	<head>
+<ul>
+	Because I created a horizontal list and a reference to open a new website, I use two commands in a line of the list &lt li &gt &a href="the name of that element of the list" &gt "the description" &lt /a &gt &lt/li &gt
+- I can make a menu with floats but that is css
+
+	<li><a href="#home">Home</a></li>
+ 	<li><a href="#news">News</a></li>
+  	<li><a href="#contact">Contact</a></li>
+  	<li><a href="#about">About</a></li>
+</ul>
+		
+<h2> HTML Grouping tags </h2>
+<h3>Defines a section in a document (block-level): used to contain a html elements</h3>
+	<ul style= "list-style-type: type 1">
+		<li>div, h1-h6, p, form</li>
+<h3>Defines a section in a document (inline): its used as a container of a text</h3>
+	<li> span, a , img </li>
+<h2>For creating class attributes</h2>
+- Class attribute is used to define equal styles for elements of with the same class name. Like creating note cards (the div), then I can create the content of that notecard with headinds, lists or paragraphs. 
+
+Example:
+1. 
+<div class="Accounting">
+<h2>Financial</h2>
+<ul style="list-style-type: 1">
+	<li>Asset</li>
+	<li>Equity</li>
+</ul>
+</div>
+
+<div class="Law">
+<h2>Corporate law</h2>
+<ul style= "list-style-type: 1" > 
+	<li>financial corporate law</li>
+</ul>
+
+<h3>For HTML file paths</h3>
+<img src ="/images/apple.jpg" alt="Apple">
+
+
+
+<h3>How to make forms in html</h3>
+	<ul style="list-style-type: circle;"> 
+		<li> The HTML &lt form &gt element defines a form that is used to collect user input.There are differente elemens that you can add to that form such as text fields, checkboaxes, buttons, submite buttons, etc.  </li>
+		<li> &ltinput type="text"&gt	Defines a one-line text input field </li>
+		<li> &lt input type="radio" &gt	Defines a radio button (for selecting one of many choices)	</li>
+		<li> &lt input type="submit" &gt Defines a submit button (for submitting the form)
+</li>
+	<ol style= "list-style-type: circle">
+		<li> 
+		For example: 
+		<FORM>
+			First name: <br>
+			<input type="text" name="firstname:"> <br>
+			Last name: <br>
+			<input type="text" name="lastname:"> </FORM>
+			
+		<FORM>
+			<input type="radio" name="Gender" value="male" checked> Male <br>
+			<input type="radio" name="gender" value="female"> female <br>	
+			<input type="radio" name="male" value ="other"> Other
+	
+		</FORM>
+
+<h3>Action Attributes</h3>
+	<ul style ="list-style-type: circle"
+	<li> The action attribute defines the action to be performed when the form is submitted. For example: &lt form action=/action_page.php &gt In this case, the name of the server is called /action:page.php and so this is the side script. 
+	<li>if there is no server, then the action applies to the page</li>
+	<li>The Methdd attribute specifies what happends when the data is submitted. For example &lt form action= "/action_page.php" method="get" or "post" </li> 
+	Example: 
+	<form action="/action_page.php" method="get">
+	<li>Get is used for insensitive information. Post is used for sensitive or personal information. </li>
+	
+	</li>
+
+
+
 
 </body>
 </html>
